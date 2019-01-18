@@ -1,1 +1,35 @@
 // Navigation code here
+
+nav {
+    .flex(flex, column);
+    .fixed-nav();
+
+    .nav-title {
+        .padding(10px 0 12px 0);
+        width: 100%;
+        text-align: center;
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .nav-links {
+        .padding(10px);
+        a {
+            color: @ebony-clay;
+            .padding(20px);
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @media @phone {
+                padding: 8px;
+            }
+        }
+
+        @media @phone {
+            padding: 20px 0;
+        }
+    }
+}

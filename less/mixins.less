@@ -1,1 +1,43 @@
 // Mixins Here
+
+.padding(@padding: 10px) {
+    padding: @padding;
+}
+
+.flex(@display: flex; @direction:column; @justify: center; @align: center;) {
+    display: @display;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.button(@background-color; @text-align; @width;) {
+    background-color: @background-color;
+    text-align: @text-align;
+    max-width: @width;
+}
+
+.img-responsive() {
+    width: 100%;
+    @margin: 0 auto;
+}
+
+.transition (@prop: all, @time: 1s, @ease: linear) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+}
+
+.fixed-nav(@position: fixed, @width: 100%, @opacity:#f6f6f67a) {
+    position: @position;
+    width: @width;
+    background-color: @opacity;
+}
