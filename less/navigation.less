@@ -16,13 +16,20 @@ nav {
     .nav-links {
         .padding(10px);
         a {
-            font-family: @nav-font;
             color: @ebony-clay;
             .padding(20px);
 
             &:hover {
                 text-decoration: underline;
             }
+
+            @media @phone {
+                padding: 8px;
+            }
+        }
+
+        @media @phone {
+            padding: 20px 0;
         }
     }
 }

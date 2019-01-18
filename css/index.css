@@ -183,12 +183,21 @@ nav .nav-links {
   padding: 10px;
 }
 nav .nav-links a {
-  font-family: #454A59;
   color: #23293B;
   padding: 20px;
 }
 nav .nav-links a:hover {
   text-decoration: underline;
+}
+@media (max-width: 500px) {
+  nav .nav-links a {
+    padding: 8px;
+  }
+}
+@media (max-width: 500px) {
+  nav .nav-links {
+    padding: 20px 0;
+  }
 }
 footer {
   color: #22283B;
@@ -223,6 +232,17 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -239,8 +259,23 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    order: 2;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -249,21 +284,53 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  padding: 10px;
+  text-align: center;
+  padding: 30px;
+}
+.home .walk .walk-text .btn a {
+  padding: 8px 20px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #23293B;
   text-align: center;
-  max-width: 30%;
-}
-.home .walk .walk-text .btn a {
+  max-width: 40%;
   font-size: 1.6rem;
   color: #F1F1F1;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn a {
+    background-color: #23293B;
+    text-align: center;
+    max-width: 100%;
+    padding: 5% 40%;
+  }
+}
+.home .walk .walk-text .btn a:hover {
+  background-color: #5c6c9b;
+  color: #a4a4a4;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    order: 1;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
