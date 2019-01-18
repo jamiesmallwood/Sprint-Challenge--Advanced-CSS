@@ -169,7 +169,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F6F6F6;
+  position: fixed;
+  width: 100%;
+  background-color: #f6f6f67a;
 }
 nav .nav-title {
   padding: 10px 0 12px 0;
@@ -208,6 +210,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 98px;
+}
+@media (max-width: 500px) {
+  .home {
+    padding-top: 118px;
+  }
 }
 .home .intro img {
   -webkit-border-radius: 5px;
