@@ -1,1 +1,26 @@
 // Navigation code here
+
+nav {
+    .flex(flex, column);
+    background-color: @nav-bg;
+
+    .nav-title {
+        .padding(10px 0 12px 0);
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .nav-links {
+        .padding(10px);
+        a {
+            font-family: @nav-font;
+            color: @ebony-clay;
+            .padding(20px);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
