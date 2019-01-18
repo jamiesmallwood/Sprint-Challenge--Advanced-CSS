@@ -10,3 +10,20 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.button(@background-color; @text-align; @width;) {
+    background-color: @background-color;
+    text-align: @text-align;
+    max-width: @width;
+}
+
+.img-responsive() {
+    width: 100%;
+    @margin: 0 auto;
+}

@@ -173,6 +173,8 @@ nav {
 }
 nav .nav-title {
   padding: 10px 0 12px 0;
+  width: 100%;
+  text-align: center;
 }
 nav .nav-title h1 {
   font-size: 4rem;
@@ -197,6 +199,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -239,6 +247,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #23293B;
+  text-align: center;
+  max-width: 30%;
+}
+.home .walk .walk-text .btn a {
+  font-size: 1.6rem;
+  color: #F1F1F1;
 }
 .home .walk .walk-img {
   width: 46%;
